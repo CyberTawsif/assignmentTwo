@@ -179,6 +179,10 @@ h1 {
 }
 
 
+
+/* Upcoming match css */
+
+
 .upcoming-match {
     height: fit-content;
     max-width: 82.5625rem;
@@ -235,9 +239,9 @@ h1 {
     line-height: 1.25rem;
 }
 
-/* Upcoming match css */
 
 
+/* for desktop */
 
 @media screen and (min-width: 993px) {
     .banner {
@@ -300,11 +304,7 @@ h1 {
         transform: scale(1.5);
     }
 
-    /* animation */
-
 }
-
-
 
 
 
@@ -517,6 +517,196 @@ h1 {
     .cup {
         left: 15.9375rem;
         transform: scale(0.9);
+    }
+
+}
+
+/*  Media Query for mobile devices */
+
+@media screen and (min-width: 0px) and (max-width: 680px) {
+
+    /* For blog items */
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+        margin: 0 auto;
+    }
+
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        width: 20.875rem;
+        height: 29.5rem;
+        margin: 1.5rem auto;
+    }
+
+    .bannerArticle {
+        width: 16.125rem;
+        height: 11.125rem;
+        margin: 0.75rem 2.375rem 0 2.375rem;
+    }
+
+    .bannerArticle h1 {
+        width: 14.25rem;
+        height: 4.125rem;
+        font-weight: 700;
+        font-size: 1.375rem;
+        line-height: 2.0625rem;
+    }
+
+    .bannerArticle .bannerButton {
+        margin-top: -10rem;
+        width: 10.0625rem;
+        height: 2.5rem;
+    }
+
+    .bannerArticle p {
+        width: 16.125rem;
+        height: 3rem;
+        margin-top: 0.675rem;
+        font-size: 0.875rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .headerimage {
+        width: 14.5625rem;
+        height: 15.3125rem;
+        margin: 0 auto;
+    }
+
+
+    .headerimage img {
+        width: 90%;
+    }
+
+    ..main-section {
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+        width: 89vw;
+    }
+
+    .blognav {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        width: 89vw;
+    }
+
+    .blogrightnav .blogrightnavred {
+        width: 15rem;
+        height: 4rem;
+        border: 1px solid #e8e8e8;
+    }
+
+    .blogs {
+        max-width: 20.875rem;
+        grid-template-columns: repeat(1, 1fr);
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+
+    .blog {
+        width: 100%;
+        height: 23.75rem;
+    }
+
+    .blogdescription p {
+        margin-left: 0;
+        margin-top: 1.875rem;
+    }
+
+    .view-all {
+        display: none;
+
+    }
+
+    /* For blog items */
+
+    /* for footer */
+    .footer {
+        width: 100vw;
+        height: 25.75rem;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footerlist li {
+        display: block;
+        color: white;
+        margin: 0.5rem auto;
+    }
+
+    /* for footer */
+
+    /* for upcoming match items */
+
+    .upcoming-match {
+        height: fit-content;
+        width: 20.875rem;
+        margin-top: 0;
+    }
+
+    .match-day {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .match {
+        width: 20.875rem;
+    }
+
+    /* for upcoming match items */
+
+    /* animation */
+    @keyframes bounce {
+        0% {
+            top: 81%;
+        }
+
+        20% {
+            top: 41%;
+        }
+
+        40% {
+            top: 81%;
+        }
+
+        50% {
+            top: 51%;
+        }
+
+        60% {
+            top: 81%;
+        }
+
+        70% {
+            top: 61%;
+        }
+
+        80% {
+            top: 81%;
+        }
+
+        90% {
+            top: 71%;
+        }
+
+        100% {
+            top: 81%;
+        }
+    }
+
+    .cup {
+        top: 24rem;
+        left: 10.625rem;
+        transform: scale(0.7);
     }
 
     /* animation */
